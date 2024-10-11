@@ -63,7 +63,7 @@ class _IOBufferWithEn(wiring.Component):
                 # - tCKD = 1..5 ns (CK to DQ valid)
                 i_D_OUT_0=self.o[index],
                 o_D_IN_0=self.i[index],
-                io_PACKAGE_PIN=pin,
+                io_PACKAGE_PIN=pin.io,
             )
         return m
 
