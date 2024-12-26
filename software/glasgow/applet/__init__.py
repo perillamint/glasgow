@@ -372,7 +372,7 @@ def applet_simulation_test(setup, args=[]):
             vcd_name = f"{case.__name__}.vcd"
             with sim.write_vcd(vcd_name):
                 sim.run()
-            os.remove(vcd_name)
+            #os.remove(vcd_name)
 
         return wrapper
 
